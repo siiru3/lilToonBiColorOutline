@@ -4,13 +4,13 @@ using UnityEngine;
 
 namespace lilToon
 {
-    public class TemplateFullInspector : lilToonInspector
+    public class lilToonBiColorOLInspector : lilToonInspector
     {
         // Custom properties
         //MaterialProperty customVariable;
 
         private static bool isShowCustomProperties;
-        private const string shaderName = "TemplateFull";
+        private const string shaderName = "lilToonBiColorOL";
 
         protected override void LoadCustomProperties(MaterialProperty[] props, Material material)
         {

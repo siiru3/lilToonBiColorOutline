@@ -1,50 +1,14 @@
 //----------------------------------------------------------------------------------------------------------------------
 // Macro
-
-// Custom variables
-//#define LIL_CUSTOM_PROPERTIES \
-//    float _CustomVariable;
-#define LIL_CUSTOM_PROPERTIES
-
-// Custom textures
-#define LIL_CUSTOM_TEXTURES
-
-// Add vertex shader input
-//#define LIL_REQUIRE_APP_POSITION
-//#define LIL_REQUIRE_APP_TEXCOORD0
-//#define LIL_REQUIRE_APP_TEXCOORD1
-//#define LIL_REQUIRE_APP_TEXCOORD2
-//#define LIL_REQUIRE_APP_TEXCOORD3
-//#define LIL_REQUIRE_APP_TEXCOORD4
-//#define LIL_REQUIRE_APP_TEXCOORD5
-//#define LIL_REQUIRE_APP_TEXCOORD6
-//#define LIL_REQUIRE_APP_TEXCOORD7
-//#define LIL_REQUIRE_APP_COLOR
-//#define LIL_REQUIRE_APP_NORMAL
-//#define LIL_REQUIRE_APP_TANGENT
-//#define LIL_REQUIRE_APP_VERTEXID
-
 // Add vertex shader output
-//#define LIL_V2F_FORCE_TEXCOORD0
-//#define LIL_V2F_FORCE_TEXCOORD1
-//#define LIL_V2F_FORCE_POSITION_OS
-//#define LIL_V2F_FORCE_POSITION_WS
-//#define LIL_V2F_FORCE_POSITION_SS
-//#define LIL_V2F_FORCE_NORMAL
-//#define LIL_V2F_FORCE_TANGENT
-//#define LIL_V2F_FORCE_BITANGENT
-//#define LIL_CUSTOM_V2F_MEMBER(id0,id1,id2,id3,id4,id5,id6,id7)
-
-// Add vertex copy
-#define LIL_CUSTOM_VERT_COPY
-
-// Inserting a process into the vertex shader
-//#define LIL_CUSTOM_VERTEX_OS
-//#define LIL_CUSTOM_VERTEX_WS
+#define LIL_V2F_NORMAL_WS
 
 // Inserting a process into pixel shader
-//#define BEFORE_xx
-//#define OVERRIDE_xx
+// Override Outline Color
+#define OVERRIDE_OUTLINE_COLOR \
+    fd.N = normalize(input.normalWS); \
+    fd.col.rgb = fd.N.x < 0.0 \
+        ? float3(1.0, 0.0, 0.0) : float3(0.0, 0.0, 1.0);
 
 //----------------------------------------------------------------------------------------------------------------------
 // Information about variables
