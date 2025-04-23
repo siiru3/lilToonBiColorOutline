@@ -1,7 +1,7 @@
 //----------------------------------------------------------------------------------------------------------------------
 // Macro
 // Add vertex shader output
-#define LIL_V2F_NORMAL_WS
+#define LIL_V2F_FORCE_NORMAL
 
 // Inserting a process into pixel shader
 // Override Outline Color
