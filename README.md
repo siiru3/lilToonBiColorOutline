@@ -15,7 +15,7 @@
 
 ## 導入方法
 
-- [lilToon 導入手順と簡易的な使い方](https://lilxyzw.github.io/lilToon/ja_JP/first.html#%E5%B0%8E%E5%85%A5%E6%89%8B%E9%A0%86%E3%81%A8%E7%B0%A1%E6%98%93%E7%9A%84%E3%81%AA%E4%BD%BF%E3%81%84%E6%96%B9) にしたがって、シェーダーをインストールしてください。
+- [lilToon 導入手順と簡易的な使い方](https://lilxyzw.github.io/lilToon/ja_JP/first.html#%E5%B0%8E%E5%85%A5%E6%89%8B%E9%A0%86%E3%81%A8%E7%B0%A1%E6%98%93%E7%9A%84%E3%81%AA%E4%BD%BF%E3%81%84%E6%96%B9) にしたがって、lilToon をインストールしてください。
 - [lilToonBiColorOutline.zip](https://github.com/siiru3/lilToonBiColorOutline/releases/download/v0.0.1/lilToonBiColorOutline.zip) をダウンロードし、zipファイルを解凍してください。
 - 解凍したフォルダ内にある "lilToonBiColorOutline" フォルダを "Assets" 直下に配置してください。
 - マテリアルを選択し、Inspector上部の "Shader" を "lilToonBiColorOL/lilToon" に変更してください。
