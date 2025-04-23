@@ -2,7 +2,7 @@
 
 ## これは何？
 
-- lilToon のカスタムシェーダーです。
+- [lilToon](https://lilxyzw.github.io/lilToon/ja_JP/) のカスタムシェーダーです。
   - cf. [lilToon カスタムシェーダーの作り方](https://lilxyzw.github.io/lilToon/ja_JP/dev/custom_shader.html)
 - ワールド法線の向きに応じて、輪郭線の色(青 or 赤)を決めます。
   - より具体的には、ワールド法線の x 成分の値が 0 未満かどうかで輪郭線の色を決めています。
