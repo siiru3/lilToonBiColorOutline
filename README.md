@@ -23,6 +23,10 @@
 
 - "輪郭線設定" から "輪郭線" のチェックボックスにチェックを入れてください。（輪郭線の太さも変更可能です。）
 
+## 色の変更方法
+
+- [custom.hlsl](https://github.com/siiru3/lilToonBiColorOutline/blob/main/lilToonBiColorOutline/Shaders/custom.hlsl) の 11 行目の値を書き換えることで RGB 値で色を指定することができます。
+
 ## 注意点
 
 - "輪郭線設定"の"色"の項目で指定した色は反映されません。
