@@ -25,7 +25,10 @@
 
 ## 色の変更方法
 
-- [custom.hlsl](https://github.com/siiru3/lilToonBiColorOutline/blob/main/lilToonBiColorOutline/Shaders/custom.hlsl) の 11 行目の値を書き換えることで RGB 値で色を指定することができます。
+- Inspector の "カスタムプロパティ" の項目から変更できます。
+
+<image src="https://github.com/user-attachments/assets/2013705f-1e37-4964-8c2e-9b645c61ac4c" width="50%" />
+
 
 ## 注意点
 
