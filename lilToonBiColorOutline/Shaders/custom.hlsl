@@ -1,5 +1,10 @@
 //----------------------------------------------------------------------------------------------------------------------
 // Macro
+// Custom variables
+#define LIL_CUSTOM_PROPERTIES \
+    float4 _OutlineColor1; \
+    float4 _OutlineColor2;
+
 // Add vertex shader output
 #define LIL_V2F_FORCE_NORMAL
 
@@ -7,8 +12,8 @@
 // Override Outline Color
 #define OVERRIDE_OUTLINE_COLOR \
     fd.N = normalize(input.normalWS); \
-    fd.col.rgb = fd.N.x < 0.0 \
-        ? float3(1.0, 0.0, 0.0) : float3(0.0, 0.0, 1.0);
+    fd.col.rgba = fd.N.x < 0.0 \
+        ? _OutlineColor1 : _OutlineColor2;
 
 //----------------------------------------------------------------------------------------------------------------------
 // Information about variables

@@ -1,4 +1,5 @@
 
         //----------------------------------------------------------------------------------------------------------------------
         // Custom Properties
-        //_CustomVariable ("Custom Variable", Float) = 0
+        [lilHDR]  _OutlineColor1 ("Color 1", Color) = (0,0,1,1)
+        [lilHDR]  _OutlineColor2 ("Color 2", Color) = (1,0,0,1)

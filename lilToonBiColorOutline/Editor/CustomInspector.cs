@@ -7,7 +7,8 @@ namespace lilToon
     public class lilToonBiColorOLInspector : lilToonInspector
     {
         // Custom properties
-        //MaterialProperty customVariable;
+        MaterialProperty outlineColor1;
+        MaterialProperty outlineColor2;
 
         private static bool isShowCustomProperties;
         private const string shaderName = "lilToonBiColorOL";
@@ -24,7 +25,8 @@ namespace lilToon
             //isShowRenderMode = false;
 
             //LoadCustomLanguage("");
-            //customVariable = FindProperty("_CustomVariable", props);
+            outlineColor1 = FindProperty("_OutlineColor1", props);
+            outlineColor2 = FindProperty("_OutlineColor2", props);
         }
 
         protected override void DrawCustomProperties(Material material)
@@ -37,14 +39,15 @@ namespace lilToon
             // customBox        box (similar to unity default box)
             // customToggleFont label for box
 
-            isShowCustomProperties = Foldout("Custom Properties", "Custom Properties", isShowCustomProperties);
+            isShowCustomProperties = Foldout("BiColorOutline", "BiColorOutline Properties", isShowCustomProperties);
             if(isShowCustomProperties)
             {
                 EditorGUILayout.BeginVertical(boxOuter);
-                EditorGUILayout.LabelField(GetLoc("Custom Properties"), customToggleFont);
+                EditorGUILayout.LabelField(GetLoc("Properties"), customToggleFont);
                 EditorGUILayout.BeginVertical(boxInnerHalf);
 
-                //m_MaterialEditor.ShaderProperty(customVariable, "Custom Variable");
+                m_MaterialEditor.ShaderProperty(outlineColor1, "Color 1");
+                m_MaterialEditor.ShaderProperty(outlineColor2, "Color 2");
 
                 EditorGUILayout.EndVertical();
                 EditorGUILayout.EndVertical();
